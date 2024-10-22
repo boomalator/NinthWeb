@@ -13,16 +13,38 @@
             background-repeat: no-repeat;
             background-position: left top;
             background-size: 3840px 2160px; /* 4K resolution */
-                   cursor: help;
+            cursor: help;
+        }
+        
+        .tooltip {
+            visibility: hidden;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 600px;
+            line-height: 1.5;
+            font-family: Arial, sans-serif;
+            z-index: 1000;
+            white-space: pre-line;
+        }
+
+        body:hover .tooltip {
+            visibility: visible;
         }
     </style>
 </head>
-<body title="In a world where magic is power, Talon is about to shatter every expectation.
+<body>
+    <div class="tooltip">In a world where magic is power, Talon is about to shatter every expectation.
 
 As a rare sorcerer with a hidden ability, Talon's acceptance into the prestigious Inferno City University should be a dream come true. But his newfound powers make him a target as much as an asset.
 
 Thrust into a web of magical politics, underground fight clubs, and dark conspiracies, Talon must navigate a treacherous landscape where every spell could be his last. Alongside newfound allies, he faces challenges that will test not just his magical prowess, but his very humanity. Will he use his powers to climb the ranks of this cutthroat magical society, or will he risk everything to change it?
 
-'The Ninth Sorcerer' is a pulse-pounding urban fantasy that explores power, identity, and the cost of ambition. In a world where every spell counts, Talon's journey from underdog to potential savior will keep you spellbound until the very last page.">
+'The Ninth Sorcerer' is a pulse-pounding urban fantasy that explores power, identity, and the cost of ambition. In a world where every spell counts, Talon's journey from underdog to potential savior will keep you spellbound until the very last page.</div>
 </body>
 </html>
